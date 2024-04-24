@@ -1,0 +1,409 @@
+{
+    "Markers": [
+        {
+            "endDatetime": "2021-08-07T10:59:21.100889+03:00",
+            "extras": {
+            },
+            "index": 1,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T10:59:21.099905+03:00",
+            "originalStartDatetime": "2021-08-07T10:59:21.099905+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T10:59:21.100889+03:00",
+            "type": "instance",
+            "uuid": "2296c4bd-12f2-40c6-b7e5-7a8afffc0077",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T10:59:37.058353+03:00",
+            "extras": {
+            },
+            "index": 2,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T10:59:37.057977+03:00",
+            "originalStartDatetime": "2021-08-07T10:59:37.057977+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T10:59:37.058353+03:00",
+            "type": "instance",
+            "uuid": "c98a8c9e-cd7b-4193-8756-2b28b8c2c88a",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T10:59:53.023143+03:00",
+            "extras": {
+            },
+            "index": 3,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T10:59:53.020888+03:00",
+            "originalStartDatetime": "2021-08-07T10:59:53.020888+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T10:59:53.023143+03:00",
+            "type": "instance",
+            "uuid": "b2572c8c-6ac1-4cc3-9b34-136d38031fbb",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:00:08.964750+03:00",
+            "extras": {
+            },
+            "index": 4,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:00:08.964713+03:00",
+            "originalStartDatetime": "2021-08-07T11:00:08.964713+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:00:08.964750+03:00",
+            "type": "instance",
+            "uuid": "1bb9ba52-5f49-46d0-bf84-1d8d575b4957",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:00:24.933947+03:00",
+            "extras": {
+            },
+            "index": 5,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:00:24.930909+03:00",
+            "originalStartDatetime": "2021-08-07T11:00:24.930909+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:00:24.933947+03:00",
+            "type": "instance",
+            "uuid": "6af50ac5-093b-45fd-b73d-b7ff79fdf69b",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:00:40.896650+03:00",
+            "extras": {
+            },
+            "index": 6,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:00:40.893292+03:00",
+            "originalStartDatetime": "2021-08-07T11:00:40.893292+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:00:40.896650+03:00",
+            "type": "instance",
+            "uuid": "40044ca9-6885-4226-83a0-bfdd75bc7be8",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:00:56.855757+03:00",
+            "extras": {
+            },
+            "index": 7,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:00:56.853179+03:00",
+            "originalStartDatetime": "2021-08-07T11:00:56.853179+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:00:56.855757+03:00",
+            "type": "instance",
+            "uuid": "bf4d68b7-faa2-4a96-9fa2-25038d4c4d86",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:01:12.813482+03:00",
+            "extras": {
+            },
+            "index": 8,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:01:12.810596+03:00",
+            "originalStartDatetime": "2021-08-07T11:01:12.810596+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:01:12.813482+03:00",
+            "type": "instance",
+            "uuid": "1a851cf6-e410-4837-bfb1-caacd8bcfee3",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:01:28.783227+03:00",
+            "extras": {
+            },
+            "index": 9,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:01:28.782918+03:00",
+            "originalStartDatetime": "2021-08-07T11:01:28.782918+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:01:28.783227+03:00",
+            "type": "instance",
+            "uuid": "8ea00703-c4a1-4651-bb81-e44bcf233983",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:01:44.730180+03:00",
+            "extras": {
+            },
+            "index": 10,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:01:44.730969+03:00",
+            "originalStartDatetime": "2021-08-07T11:01:44.730969+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:01:44.730180+03:00",
+            "type": "instance",
+            "uuid": "008e4810-86e4-4edf-b4ac-b80a0d12e587",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:02:00.692971+03:00",
+            "extras": {
+            },
+            "index": 11,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:02:00.695638+03:00",
+            "originalStartDatetime": "2021-08-07T11:02:00.695638+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:02:00.692971+03:00",
+            "type": "instance",
+            "uuid": "5746360a-c3e8-46a8-ab4d-1d110586faf4",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:02:16.655067+03:00",
+            "extras": {
+            },
+            "index": 12,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:02:16.654753+03:00",
+            "originalStartDatetime": "2021-08-07T11:02:16.654753+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:02:16.655067+03:00",
+            "type": "instance",
+            "uuid": "3ecea437-fb5b-459a-9f79-1defa4509bf5",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:02:32.608757+03:00",
+            "extras": {
+            },
+            "index": 13,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:02:32.605628+03:00",
+            "originalStartDatetime": "2021-08-07T11:02:32.605628+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:02:32.608757+03:00",
+            "type": "instance",
+            "uuid": "648b3d46-b8d8-490f-acf3-ffaf5ae6d106",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:02:48.595223+03:00",
+            "extras": {
+            },
+            "index": 14,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:02:48.593007+03:00",
+            "originalStartDatetime": "2021-08-07T11:02:48.593007+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:02:48.595223+03:00",
+            "type": "instance",
+            "uuid": "50efe846-f5fc-41d2-9a80-d069195d8a0b",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:03:04.541288+03:00",
+            "extras": {
+            },
+            "index": 15,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:03:04.542952+03:00",
+            "originalStartDatetime": "2021-08-07T11:03:04.542952+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:03:04.541288+03:00",
+            "type": "instance",
+            "uuid": "45b5314a-6bdc-40d2-ad2b-4c54a3aff5d8",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:03:20.502872+03:00",
+            "extras": {
+            },
+            "index": 16,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:03:20.505961+03:00",
+            "originalStartDatetime": "2021-08-07T11:03:20.505961+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:03:20.502872+03:00",
+            "type": "instance",
+            "uuid": "dea26491-8356-4dc9-b12d-8f0686758967",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:03:36.482247+03:00",
+            "extras": {
+            },
+            "index": 17,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:03:36.478320+03:00",
+            "originalStartDatetime": "2021-08-07T11:03:36.478320+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:03:36.482247+03:00",
+            "type": "instance",
+            "uuid": "e9b60619-41e7-46d3-887a-8e4e20445878",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:03:52.443776+03:00",
+            "extras": {
+            },
+            "index": 18,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:03:52.444575+03:00",
+            "originalStartDatetime": "2021-08-07T11:03:52.444575+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:03:52.443776+03:00",
+            "type": "instance",
+            "uuid": "dae878b0-e7d3-4895-bf11-095d924c33aa",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:04:08.398348+03:00",
+            "extras": {
+            },
+            "index": 19,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:04:08.400346+03:00",
+            "originalStartDatetime": "2021-08-07T11:04:08.400346+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:04:08.398348+03:00",
+            "type": "instance",
+            "uuid": "e407b6d7-e647-45ef-954d-59d3bc0f2126",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:04:24.352955+03:00",
+            "extras": {
+            },
+            "index": 20,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:04:24.350244+03:00",
+            "originalStartDatetime": "2021-08-07T11:04:24.350244+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:04:24.352955+03:00",
+            "type": "instance",
+            "uuid": "ec026c1a-7a99-4749-8c26-b7b48346d90e",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:04:40.309026+03:00",
+            "extras": {
+            },
+            "index": 21,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:04:40.306192+03:00",
+            "originalStartDatetime": "2021-08-07T11:04:40.306192+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:04:40.309026+03:00",
+            "type": "instance",
+            "uuid": "bc9c6385-f6b4-474c-a0f3-a0ddcc2d1696",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:04:56.286297+03:00",
+            "extras": {
+            },
+            "index": 22,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:04:56.289592+03:00",
+            "originalStartDatetime": "2021-08-07T11:04:56.289592+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:04:56.286297+03:00",
+            "type": "instance",
+            "uuid": "4813d9f2-c2e8-4893-a3de-1d2a7bb16569",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:05:12.255697+03:00",
+            "extras": {
+            },
+            "index": 23,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:05:12.252815+03:00",
+            "originalStartDatetime": "2021-08-07T11:05:12.252815+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:05:12.255697+03:00",
+            "type": "instance",
+            "uuid": "d7d0b15e-48f1-4824-929c-9c2248176f24",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:05:28.202081+03:00",
+            "extras": {
+            },
+            "index": 24,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:05:28.200399+03:00",
+            "originalStartDatetime": "2021-08-07T11:05:28.200399+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:05:28.202081+03:00",
+            "type": "instance",
+            "uuid": "12c2b897-f0ef-4d6e-9fc7-182a4f978466",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:05:44.164293+03:00",
+            "extras": {
+            },
+            "index": 25,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:05:44.166348+03:00",
+            "originalStartDatetime": "2021-08-07T11:05:44.166348+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:05:44.164293+03:00",
+            "type": "instance",
+            "uuid": "f4bfeff6-5f16-4721-af88-66455d0d580b",
+            "value": 1
+        },
+        {
+            "endDatetime": "2021-08-07T11:06:00.146221+03:00",
+            "extras": {
+            },
+            "index": 26,
+            "label": "Onset",
+            "originalEndDatetime": "2021-08-07T11:06:00.143903+03:00",
+            "originalStartDatetime": "2021-08-07T11:06:00.143903+03:00",
+            "port": "KeyStroke",
+            "startDatetime": "2021-08-07T11:06:00.146221+03:00",
+            "type": "instance",
+            "uuid": "fc17ad6e-65a2-4935-b6a4-769bd3c179af",
+            "value": 1
+        }
+    ],
+    "cqMode": 0,
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2021-08-07T14:45:18.043+03:00",
+    "mappings": {
+        "CMS": "TP9",
+        "DRL": "TP10",
+        "LA": "F1",
+        "LB": "FCz",
+        "LC": "FC1",
+        "LD": "FC3",
+        "LE": "FC5",
+        "LF": "Cz",
+        "LG": "C1",
+        "LH": "C3",
+        "LJ": "C5",
+        "LK": "CPz",
+        "LL": "CP1",
+        "LM": "CP3",
+        "LN": "CP5",
+        "LO": "P1",
+        "LP": "P3",
+        "LQ": "P5",
+        "RA": "Afz",
+        "RB": "Fz",
+        "RC": "F2",
+        "RD": "FC2",
+        "RE": "FC4",
+        "RF": "FC6",
+        "RG": "C2",
+        "RH": "C4",
+        "RJ": "C6",
+        "RK": "CP2",
+        "RL": "CP4",
+        "RM": "CP6",
+        "RN": "Pz",
+        "RO": "P2",
+        "RP": "P4",
+        "RQ": "P6"
+    },
+    "recordId": "280c9989-b6b4-450b-a74a-97b88ff5ba9d",
+    "user": "umar_cse"
+}

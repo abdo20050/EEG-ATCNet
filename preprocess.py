@@ -24,7 +24,7 @@ import scipy.io as sio
 from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import StandardScaler
 from sklearn.utils import shuffle
-
+from custom_loader import load_data_csv
 # We need the following function to load and preprocess the High Gamma Dataset
 # from preprocess_HGD import load_HGD_data
 
@@ -177,10 +177,10 @@ def load_CS2R_data_v2(data_path, subject, training,
     
     # Get all subjects files with .edf format.
     subjectFiles = glob.glob(data_path + 'S_*/')
-    
+    print(subjectFiles)
     # Get all subjects numbers sorted without duplicates.
     subjectNo = list(dict.fromkeys(sorted([x[len(x)-4:len(x)-1] for x in subjectFiles])))
-    # print(SubjectNo[subject].zfill(3))
+    print(subjectNo[subject].zfill(3))
     
     if training:  session = 1
     else:         session = 2
@@ -200,6 +200,7 @@ def load_CS2R_data_v2(data_path, subject, training,
     #Loop to the first 4 runs.
     CheckFiles = glob.glob(data_path + 'S_' + subjectNo[subject].zfill(3) + '/S' + str(session) + '/*.edf')
     if not CheckFiles:
+        print('errrorrr')
         return 
     
     for runNo in range(num_runs): 
@@ -276,9 +277,12 @@ def load_CS2R_data_v2(data_path, subject, training,
                 if (trailDuration < 7.8) :
                     print('In Session: {} - Run: {}, Trail no: {} is skipped due to short/long duration of: {:.2f}'.format(session, (runNo+1), (trail+1), trailDuration))
                     continue
-
+            print(raw[:32, int(start*int(fs)):int(stop*int(fs))])
             MITrail = raw[:32, int(start*int(fs)):int(stop*int(fs))][0]
             if (MITrail.shape[1] != data.shape[2]):
+                print(MITrail.shape[1])
+                print(MITrail.shape)
+                print(data.shape[2])
                 print('Error in Session: {} - Run: {}, Trail no: {} due to the lost of data'.format(session, (runNo+1), (trail+1)))
                 return
             
@@ -316,8 +320,8 @@ def standardize_data(X_train, X_test, channels):
     return X_train, X_test
 
 
-#%%
-def get_data(path, subject, dataset = 'BCI2a', classes_labels = 'all', LOSO = False, isStandard = True, isShuffle = True):
+
+def get_data(path, subject, dataset = 'EEG_CSV', classes_labels = 'all', LOSO = False, isStandard = True, isShuffle = True):
     
     # Load and split the dataset into training and testing 
     if LOSO:
@@ -336,11 +340,15 @@ def get_data(path, subject, dataset = 'BCI2a', classes_labels = 'all', LOSO = Fa
             X_train, y_train = load_BCI2a_data(path, subject+1, True)
             X_test, y_test = load_BCI2a_data(path, subject+1, False)
         elif (dataset == 'CS2R'):
+            output = load_CS2R_data_v2(path, subject, True, classes_labels)
+            print(output)
             X_train, y_train, _, _, _ = load_CS2R_data_v2(path, subject, True, classes_labels)
             X_test, y_test, _, _, _ = load_CS2R_data_v2(path, subject, False, classes_labels)
         # elif (dataset == 'HGD'):
         #     X_train, y_train = load_HGD_data(path, subject+1, True)
         #     X_test, y_test = load_HGD_data(path, subject+1, False)
+        elif(dataset == 'EEG_CSV'):
+            X_train, X_test, y_train, y_test = load_data_csv(path,train_size=0.8)
         else:
             raise Exception("'{}' dataset is not supported yet!".format(dataset))
 

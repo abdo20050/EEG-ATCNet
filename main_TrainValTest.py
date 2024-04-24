@@ -23,6 +23,9 @@ import shutil
 import time
 import numpy as np
 import matplotlib.pyplot as plt
+np.object = np.object_
+np.bool = np.bool_
+np.int = np.int_
 import tensorflow as tf
 
 from tensorflow.keras.optimizers import Adam
@@ -46,6 +49,7 @@ def draw_learning_curves(history, sub):
     plt.xlabel('Epoch')
     plt.legend(['Train', 'val'], loc='upper left')
     plt.show()
+    plt.figure(2)
     plt.plot(history.history['loss'])
     plt.plot(history.history['val_loss'])
     plt.title('Model loss - subject: ' + str(sub))
@@ -161,7 +165,7 @@ def train(dataset_conf, train_conf, results_path):
                 # EarlyStopping(monitor='val_loss', verbose=1, mode='min', patience=patience)
             ]
             history = model.fit(X_train, y_train_onehot, validation_data=(X_val, y_val_onehot), 
-                                epochs=epochs, batch_size=batch_size, callbacks=callbacks, verbose=0)
+                                epochs=epochs, batch_size=batch_size, callbacks=callbacks, verbose=1)
            
             # Evaluate the performance of the trained model based on the validation data
             # Here we load the Trained weights from the file saved in the hard 
@@ -325,7 +329,7 @@ def getModel(model_name, dataset_conf, from_logits = False):
             in_chans = n_channels, 
             in_samples = in_samples, 
             # Sliding window (SW) parameter
-            n_windows = 5, 
+            n_windows = 10, 
             # Attention (AT) block parameter
             attention = 'mha', # Options: None, 'mha','mhla', 'cbam', 'se'
             # Convolutional (CV) block parameters
@@ -334,7 +338,7 @@ def getModel(model_name, dataset_conf, from_logits = False):
             eegn_kernelSize = 64,
             eegn_poolSize = 7,
             eegn_dropout = 0.3,
-            # Temporal convolutional (TC) block parameters
+            # Temporal convolut4t56ional (TC) block parameters
             tcn_depth = 2, 
             tcn_kernelSize = 4,
             tcn_filters = 32,
@@ -371,7 +375,7 @@ def getModel(model_name, dataset_conf, from_logits = False):
 #%%
 def run():
     # Define dataset parameters
-    dataset = 'HGD' # Options: 'BCI2a','HGD', 'CS2R'
+    dataset = 'EEG_CSV' # Options: 'BCI2a','HGD', 'CS2R', 'EEG_CSV'
     
     if dataset == 'BCI2a': 
         in_samples = 1125
@@ -379,7 +383,8 @@ def run():
         n_sub = 9
         n_classes = 4
         classes_labels = ['Left hand', 'Right hand','Foot','Tongue']
-        data_path = os.path.expanduser('~') + '/BCI Competition IV/BCI Competition IV-2a/BCI Competition IV 2a mat/'
+        data_path = "D:\\EEG_AI_model\\EEG-ATCNet\\EDF - Cleaned - phase two(remove bad sub2)\\two sessions\\S_001\\S1"
+        # data_path = os.path.expanduser('~') + '/BCI Competition IV/BCI Competition IV-2a/BCI Competition IV 2a mat/'
     elif dataset == 'HGD': 
         in_samples = 1125
         n_channels = 44
@@ -391,12 +396,20 @@ def run():
         in_samples = 1125
         # in_samples = 576
         n_channels = 32
-        n_sub = 18
+        n_sub = 7
         n_classes = 3
         # classes_labels = ['Fingers', 'Wrist','Elbow','Rest']     
         classes_labels = ['Fingers', 'Wrist','Elbow']     
-        # classes_labels = ['Fingers', 'Elbow']     
-        data_path = os.path.expanduser('~') + '/CS2R MI EEG dataset/all/EDF - Cleaned - phase one (remove extra runs)/two sessions/'
+        # classes_labels = ['Fingers', 'Elbow'] 
+        data_path = "./EDF - Cleaned - phase two(remove bad sub2)/two sessions/"    
+        # data_path = os.path.expanduser('~') + '/CS2R MI EEG dataset/all/EDF - Cleaned - phase one (remove extra runs)/two sessions/'
+    if dataset == 'EEG_CSV':
+        in_samples = 500
+        n_channels = 14
+        n_sub = 1
+        n_classes = 5
+        classes_labels = ['break','foot','left_hand','right_hand','tongue']
+        data_path = './records/'
     else:
         raise Exception("'{}' dataset is not supported yet!".format(dataset))
         
@@ -410,11 +423,11 @@ def run():
                     'n_sub': n_sub, 'n_channels': n_channels, 'in_samples': in_samples,
                     'data_path': data_path, 'isStandard': True, 'LOSO': False}
     # Set training hyperparamters
-    train_conf = { 'batch_size': 64, 'epochs': 500, 'patience': 100, 'lr': 0.001,'n_train': 1,
+    train_conf = { 'batch_size': 32, 'epochs': 500, 'patience': 100, 'lr': 0.003,'n_train': 1,
                   'LearnCurves': True, 'from_logits': False, 'model':'ATCNet'}
            
     # Train the model
-    # train(dataset_conf, train_conf, results_path)
+    train(dataset_conf, train_conf, results_path)
 
     # Evaluate the model based on the weights saved in the '/results' folder
     model = getModel(train_conf.get('model'), dataset_conf)
