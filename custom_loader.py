@@ -10,11 +10,14 @@ def load_data_csv(root_folder, train_size = 0.8):
     train_labels, test_labels = [], []
     data, labels = [], []
     for sub_folder in os.listdir(root_folder):
+        print(str(sub_folder))
+        if str(sub_folder).startswith('__'):
+            continue
         folder_path = os.path.join(root_folder, sub_folder)
         for class_folder in os.listdir(folder_path):
             class_folder_path = os.path.join(folder_path, class_folder)
             if os.path.isdir(class_folder_path):
-                split_index =int(len(os.listdir(class_folder_path))*train_size//1)
+
                 for i, filename in enumerate(os.listdir(class_folder_path)):
                     if filename.endswith('.csv'):
                         df = pd.read_csv(os.path.join(class_folder_path, filename), skiprows=2)
