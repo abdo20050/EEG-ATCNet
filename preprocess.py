@@ -412,7 +412,7 @@ def get_data(path, subject, dataset = 'EEG_CSV', classes_labels = 'all', LOSO = 
         #     X_train, y_train = load_HGD_data(path, subject+1, True)
         #     X_test, y_test = load_HGD_data(path, subject+1, False)
         elif(dataset == 'EEG_CSV'):
-            X_train, X_test, y_train, y_test = load_data_csv(subject, path,train_size=0.8)
+            X_train, X_test, y_train, y_test = load_data_csv(subject, path,train_size=0.8,n_samples = 1125)
         else:
             raise Exception("'{}' dataset is not supported yet!".format(dataset))
 

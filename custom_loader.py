@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
-def load_data_csv(sub, root_folder, train_size = 0.8):
+def load_data_csv(sub, root_folder, train_size = 0.8,n_samples=500):
     classes_labels = ['break','foot','left_hand','right_hand','tongue']
     train_data, test_data = [], []
     train_labels, test_labels = [], []
@@ -24,13 +24,13 @@ def load_data_csv(sub, root_folder, train_size = 0.8):
                     if filename.endswith('.csv'):
                         df = pd.read_csv(os.path.join(class_folder_path, filename), skiprows=2)
                         df = df.iloc[:, 4:18]  # Load data from column 5 to column 19
-                        if len(df) < 500:
+                        if len(df) < n_samples:
                             mode_values = df.mode().iloc[0]  # Get the mode values of each column
-                            mode_df = pd.DataFrame([mode_values]*(500-len(df)), columns=df.columns)
-                            while len(df) < 500:
+                            mode_df = pd.DataFrame([mode_values]*(n_samples-len(df)), columns=df.columns)
+                            while len(df) < n_samples:
                                 df = pd.concat([df, mode_df], ignore_index=True)
                         else:
-                            df = df.iloc[:500]
+                            df = df.iloc[:n_samples]
                         data.append(df.values.T)
                         labels.append(classes_labels.index(class_folder))  # Create an array of class names
                     
@@ -41,9 +41,9 @@ def load_data_csv(sub, root_folder, train_size = 0.8):
 if  __name__ == '__main__':
     # Usage
     root_folder = './records/'  # Replace with your root folder path
-    train_data, test_data, train_labels, test_labels = load_data_csv(2, root_folder)
+    train_data, test_data, train_labels, test_labels = load_data_csv(0, root_folder,n_samples=1125)
     print(test_labels)
     for i in range(5):
         print(np.sum(test_labels[:]==i))
     print(train_data.shape, train_labels.shape, test_data.shape, test_labels.shape)
-    print(train_data)
+    # print(train_data)
