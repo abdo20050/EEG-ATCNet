@@ -4,8 +4,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
-def load_data_csv(sub, root_folder, train_size = 0.8,n_samples=500):
-    classes_labels = ['break','foot','left_hand','right_hand','tongue']
+def load_data_csv(sub, root_folder, train_size = 0.8,n_samples=500,classes_labels = ['all']):
+    # classes_labels = ['break','foot','left_hand','right_hand','tongue']
     train_data, test_data = [], []
     train_labels, test_labels = [], []
     data, labels = [], []
@@ -17,6 +17,8 @@ def load_data_csv(sub, root_folder, train_size = 0.8,n_samples=500):
         # print(str(sub_folder))
         folder_path = os.path.join(root_folder, sub_folder)
         for class_folder in os.listdir(folder_path):
+            if class_folder not in classes_labels:
+                continue
             class_folder_path = os.path.join(folder_path, class_folder)
             if os.path.isdir(class_folder_path):
 
@@ -41,7 +43,8 @@ def load_data_csv(sub, root_folder, train_size = 0.8,n_samples=500):
 if  __name__ == '__main__':
     # Usage
     root_folder = './records/'  # Replace with your root folder path
-    train_data, test_data, train_labels, test_labels = load_data_csv(0, root_folder,n_samples=1125)
+    classes_labels = ['break','left_hand','right_hand','tongue']
+    train_data, test_data, train_labels, test_labels = load_data_csv(0, root_folder,train_size=0.6,n_samples=1125,classes_labels = classes_labels)
     print(test_labels)
     for i in range(5):
         print(np.sum(test_labels[:]==i))
