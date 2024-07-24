@@ -1,11 +1,15 @@
 # EEG-ATCNet
 This repository is a fork of the original repo where I used this model to make [**controling robotics using EEG in realtime**](./Papers/Controlling%20a%20Robot%20Using%20EEG%20Signals%20-%20GP%20Report.pdf) application where you find the project report [here](./Papers/Controlling%20a%20Robot%20Using%20EEG%20Signals%20-%20GP%20Report.pdf).
 
-Team members: [Abdelrahman Fatouh](https://github.com/abdo20050), Abdullah Almingash, and Saad Aldobaian
+Team members: [Abdelrahman Fatouh](https://github.com/abdo20050), [Abdullah Almingash](https://www.linkedin.com/in/abdullah-almingash-18080a302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app), and Saad Aldobaian
 
-Advisor: Prof. Ghulam Muhammad
+Advisor: [Prof. Ghulam Muhammad](https://faculty.ksu.edu.sa/en/ghulam)
 
+---
 <sub><span style="color: #888;">The completion of this project occurred within the Computer Engineering Department at the College of Computer and Information Sciences, <a href="https://ksu.edu.sa/en/" target="_blank"><b>King Saud University</b></a>.</span ></sub>
+
+<img src="./assets/KSU_logo.png" alt="alt text" width="200"/>
+
 
 ### Our contribution
 
