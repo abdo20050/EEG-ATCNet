@@ -8,7 +8,7 @@ Advisor: [Prof. Ghulam Muhammad](https://faculty.ksu.edu.sa/en/ghulam)
 ---
 <sub><span style="color: #888;">The completion of this project occurred within the Computer Engineering Department at the College of Computer and Information Sciences, <a href="https://ksu.edu.sa/en/" target="_blank"><b>King Saud University</b></a>.</span ></sub>
 
-<img src="/assets/KSU_logo.png" alt="alt text" width="200"/>
+<img src="https://i.imgur.com/HFwRVXt.png" alt="alt text" width="200"/>
 
 
 ### Our contribution
