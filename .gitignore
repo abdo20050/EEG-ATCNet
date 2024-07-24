@@ -1,4 +1,6 @@
-/BCI/*
-/EDF/*
-/CSV/*
+/BCI/*.mat
+/CSV/*/*/*.csv
+/CSV/*/*/*.json
+/EDF/two sessions/*
 /*.zip
+/*/*.zip
